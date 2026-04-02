@@ -75,7 +75,7 @@ export const questions: Question[] = [
   },
   {
     id: "renda_mensal",
-    label: "Qual é a sua renda mensal aproximada?",
+    label: "Qual é a sua renda mensal?",
     type: "radio",
     options: [
       { value: "Até 1 salário mínimo", label: "Até 1 salário mínimo" },
@@ -98,7 +98,7 @@ export const questions: Question[] = [
   },
   {
     id: "perfil_confianca",
-    label: "Qual tipo de político você mais confia para votar?",
+    label: "Qual o perfil politico que te representa melhor?",
     type: "radio",
     options: [
       { value: "Quem resolve problemas na prática", label: "Quem resolve problemas na prática" },
@@ -122,7 +122,7 @@ export const questions: Question[] = [
   },
   {
     id: "voto_presidente_2026",
-    label: "Se a eleição para Presidente fosse hoje, em quem você votaria?",
+    label: "Quem você escolheria para presidente?",
     type: "radio",
     options: [
       { value: "Lula (PT)", label: "Lula (PT)" },
@@ -150,6 +150,8 @@ export const questions: Question[] = [
     options: [
       { value: "Jerônimo Rodrigues (PT)", label: "Jerônimo Rodrigues (PT)" },
       { value: "ACM Neto (União)", label: "ACM Neto (União)" },
+      { value: "José Carlos Aleluia (Novo)", label: "José Carlos Aleluia (Novo)" },
+      { value: "Ronaldo Mansur (PSol)", label: "Ronaldo Mansur (PSol)" },
       { value: "Não sei / Indeciso", label: "Não sei / Indeciso" },
       { value: "Branco / Nulo", label: "Branco / Nulo" },
     ],
@@ -165,6 +167,7 @@ export const questions: Question[] = [
       { value: "Aroldo Cedraz (sem partido)", label: "Aroldo Cedraz (sem partido)" },
       { value: "Ronaldo Carletto (Avante)", label: "Ronaldo Carletto (Avante)" },
       { value: "João Roma (PL)", label: "João Roma (PL)" },
+      { value: "Marcelo Nilo (Republicanos)", label: "Marcelo Nilo (Republicanos)" },
       { value: "Não sei / Indeciso", label: "Não sei / Indeciso" },
       { value: "Branco / Nulo", label: "Branco / Nulo" },
     ],
@@ -180,6 +183,7 @@ export const questions: Question[] = [
       { value: "Aroldo Cedraz (sem partido)", label: "Aroldo Cedraz (sem partido)" },
       { value: "Ronaldo Carletto (Avante)", label: "Ronaldo Carletto (Avante)" },
       { value: "João Roma (PL)", label: "João Roma (PL)" },
+      { value: "Marcelo Nilo (Republicanos)", label: "Marcelo Nilo (Republicanos)" },
       { value: "Não sei / Indeciso", label: "Não sei / Indeciso" },
       { value: "Branco / Nulo", label: "Branco / Nulo" },
     ],

@@ -46,7 +46,7 @@ const DEP_ESTADUAL_CARDS: CandidateCardOption[] = [
 
 const QuizStep = ({ question, value, onChange, error }: QuizStepProps) => {
   const inputClass =
-    "w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 py-3.5 text-base text-white placeholder:text-white/45 shadow-[0_0_0_1px_rgba(255,255,255,0.02)] backdrop-blur-md transition-all focus:outline-none focus:ring-2 focus:ring-violet-400/70 focus:ring-offset-2 focus:ring-offset-[#0B0B12]";
+    "w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 py-3.5 text-center text-white placeholder:text-white/45 shadow-[0_0_0_1px_rgba(255,255,255,0.02)] backdrop-blur-md transition-all focus:outline-none focus:ring-2 focus:ring-violet-400/70 focus:ring-offset-2 focus:ring-offset-[#0B0B12]";
 
   const predefinedValues = useMemo(() => {
     if (question.type !== "radio" || !question.options) return [];
@@ -73,7 +73,7 @@ const QuizStep = ({ question, value, onChange, error }: QuizStepProps) => {
 
   return (
     <div className="w-full animate-fade-in space-y-4 sm:space-y-5">
-      <h2 className="text-balance text-lg font-semibold leading-snug text-white sm:text-xl">{question.label}</h2>
+      <h2 className="text-center text-lg font-semibold leading-snug text-white sm:text-xl">{question.label}</h2>
 
       {question.type === "text" && (
         <input
@@ -109,7 +109,7 @@ const QuizStep = ({ question, value, onChange, error }: QuizStepProps) => {
       {question.type === "select" && (
         <div className="relative">
           <select
-            className="w-full appearance-none rounded-xl border border-white/10 bg-white/[0.04] px-4 py-3.5 pr-10 text-base text-white shadow-[0_0_0_1px_rgba(255,255,255,0.02)] backdrop-blur-md transition-all focus:outline-none focus:ring-2 focus:ring-violet-400/70 focus:ring-offset-2 focus:ring-offset-[#0B0B12]"
+            className="w-full appearance-none rounded-xl border border-white/10 bg-white/[0.04] px-4 py-3.5 pr-10 text-center text-white shadow-[0_0_0_1px_rgba(255,255,255,0.02)] backdrop-blur-md transition-all focus:outline-none focus:ring-2 focus:ring-violet-400/70 focus:ring-offset-2 focus:ring-offset-[#0B0B12]"
             value={value || ""}
             onChange={(e) => onChange(e.target.value)}
           >
@@ -138,8 +138,8 @@ const QuizStep = ({ question, value, onChange, error }: QuizStepProps) => {
                   type="button"
                   onClick={() => onChange(opt.value)}
                   className={[
-                    "group relative flex flex-col overflow-hidden rounded-xl border transition-all duration-200",
-                    "shadow-[0_0_0_1px_rgba(255,255,255,0.02)] backdrop-blur-md",
+                    "group relative flex flex-col overflow-hidden rounded-xl border transition-all duration-200 text-center",
+                    "shadow-[0_0_0_1px_rgba(255,255,255,0.02)] backdrop-blur-md text-center",
                     selected
                       ? "border-violet-400/60 ring-2 ring-violet-400/40 bg-violet-400/10"
                       : "border-white/10 bg-white/[0.03] hover:border-white/20 hover:bg-white/[0.05]",
@@ -290,7 +290,7 @@ const QuizStep = ({ question, value, onChange, error }: QuizStepProps) => {
                   type="button"
                   onClick={() => onChange(isOutro ? "outro" : opt.value)}
                   className={[
-                    "w-full rounded-xl border text-left px-4 py-3.5 text-base font-medium transition-all duration-150",
+                    "w-full rounded-xl border text-center px-4 py-3.5 text-base font-medium transition-all duration-150",
                     "shadow-[0_0_0_1px_rgba(255,255,255,0.02)] backdrop-blur-md",
                     selected
                       ? "border-violet-400/40 bg-[linear-gradient(90deg,rgba(124,58,237,0.20),rgba(168,85,247,0.14))] text-white"
@@ -448,7 +448,7 @@ const LocationForm = ({ value, onChange, inputClass }: any) => {
   return (
     <div className="space-y-3">
       <div>
-        <label className="mb-1.5 block text-sm font-medium text-white/80">Cidade</label>
+        <label className="mb-1.5 block text-md font-medium text-white/80">Cidade</label>
         <Combobox
           options={cities}
           value={cidade}
@@ -463,7 +463,7 @@ const LocationForm = ({ value, onChange, inputClass }: any) => {
       {cidade && (
         <div className="animate-fade-in space-y-3">
           <div>
-            <label className="mb-1.5 block text-sm font-medium text-white/80">Bairro</label>
+            <label className="mb-1.5 block text-md font-medium text-white/80">Bairro</label>
             <Combobox
               options={bairros}
               value={bairro}
