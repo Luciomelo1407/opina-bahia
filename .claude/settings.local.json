@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(/c/Users/hieri/AppData/Local/Microsoft/WindowsApps/python3 --version)"
+    ]
+  }
+}

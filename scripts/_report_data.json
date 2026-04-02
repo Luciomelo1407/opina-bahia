@@ -1,0 +1,119 @@
+{
+  "url": "https://enquete2026.com.br",
+  "date": "Marco 6, 2026",
+  "brand_name": "Enquete 2026",
+  "overall_score": 41,
+  "executive_summary": "A landing page da Enquete 2026 Bahia tem uma base visual solida e moderna, mas esta perdendo conversoes por tres falhas criticas: zero prova social, headline focado nos criadores ao inves do usuario, e ausencia de mecanismo de crescimento viral pos-conclusao. Implementando os Quick Wins desta semana (contador de participantes, microcopy de privacidade e reformulacao do trust line), estima-se aumento de 20-35% na taxa de conclusao do quiz sem custo adicional em anuncios. Com o plano completo de 90 dias, a taxa de conversao pode saltar de 15-20% para 35-45%.",
+  "categories": {
+    "Content & Messaging": {
+      "score": 38,
+      "weight": "25%"
+    },
+    "Conversion Optimization": {
+      "score": 41,
+      "weight": "20%"
+    },
+    "SEO & Discoverability": {
+      "score": 45,
+      "weight": "20%"
+    },
+    "Competitive Positioning": {
+      "score": 30,
+      "weight": "15%"
+    },
+    "Brand & Trust": {
+      "score": 52,
+      "weight": "10%"
+    },
+    "Growth & Strategy": {
+      "score": 35,
+      "weight": "10%"
+    }
+  },
+  "findings": [
+    {
+      "severity": "Critical",
+      "finding": "Zero prova social na hero page: nenhum contador de participantes, nenhum logo, nenhuma mencao a midia ou organizacoes. Para pesquisas politicas, 'X.XXX baianos ja responderam' e o elemento de maior impacto em conversao disponivel."
+    },
+    {
+      "severity": "Critical",
+      "finding": "Nenhuma politica de privacidade linkada nem mencao ao uso dos dados (nome, telefone, endereco). Potencial violacao da LGPD e causa direta de abandono no formulario."
+    },
+    {
+      "severity": "High",
+      "finding": "Trust line fala sobre os criadores, nao sobre o usuario: 'Criamos uma enquete estrategica para entender o que a populacao precisa...' O visitante quer saber o que ELE ganha, nao o que voce quer saber."
+    },
+    {
+      "severity": "High",
+      "finding": "Nenhum mecanismo de compartilhamento pos-conclusao. A pagina de agradecimento e minimalista e nao tem botao 'Compartilhar no WhatsApp'. Este e o motor de crescimento organico mais poderoso para pesquisas no Brasil."
+    },
+    {
+      "severity": "High",
+      "finding": "Linguagem incerta no subtitulo: 'Sua Voz PODE Decidir os Proximos Anos da Bahia'. O uso de 'pode' enfraquece a proposta. Linguagem afirmativa (vai, define) converte melhor."
+    },
+    {
+      "severity": "Medium",
+      "finding": "Formulario pede endereco completo (logradouro, numero, complemento) alem de telefone. Cada campo extra reduz a taxa de conclusao em ~7%. Avaliar se numero da residencia e realmente necessario para os objetivos da pesquisa."
+    },
+    {
+      "severity": "Medium",
+      "finding": "Nenhuma estimativa de tempo ou contagem de perguntas visivel na hero page. Visitantes sem essa informacao tem maior taxa de abandono por incerteza sobre o comprometimento necessario."
+    },
+    {
+      "severity": "Medium",
+      "finding": "CTA 'Responder a Enquete' e de qualidade media. Descreve uma acao burocratica, nao um beneficio ou resultado. 'Dar Minha Opiniao' ou 'Participar da Pesquisa' e mais pessoal e converte melhor."
+    },
+    {
+      "severity": "Low",
+      "finding": "Nenhum SEO basico alem do title tag e meta description existentes. Sem schema markup (SurveyAction), sem sitemap.xml, sem robots.txt verificado. O potencial de trafego organico e desperdicado."
+    },
+    {
+      "severity": "Low",
+      "finding": "Imagens dos candidatos (susane.jpg, yandra.jpg, etc.) nao estao otimizadas para WebP nem tem loading='lazy'. Em conexoes moveis lentas isso aumenta o tempo de carregamento do quiz."
+    }
+  ],
+  "quick_wins": [
+    "Adicionar contador de participantes dinamico logo abaixo do badge: buscar total real de respostas na planilha Google Sheets e exibir como 'X.XXX baianos ja responderam' -- impacto estimado: +15-25% em conversao.",
+    "Substituir o trust line por: 'Anonimo. Gratuito. Leva menos de 3 minutos.' -- elimina as duas maiores objecoes (privacidade e tempo) numa unica linha com custo de 5 minutos de implementacao.",
+    "Adicionar microcopy de privacidade abaixo do botao CTA: 'Seus dados sao confidenciais. Sem spam, sem cadastro.' -- custo zero, impacto imediato em usuarios hesitantes.",
+    "Mudar 'Sua Voz PODE Decidir' para 'Sua Voz Define os Proximos Anos da Bahia' -- linguagem afirmativa aumenta sensacao de impacto e urgencia.",
+    "Adicionar link de politica de privacidade no rodape -- necessario para conformidade com LGPD e constroi confianca institucional."
+  ],
+  "medium_term": [
+    "Implementar botao de compartilhamento WhatsApp na pagina de agradecimento com texto pre-formatado: 'Participei da Enquete 2026 Bahia! Responda tambem: [URL]' -- motor de crescimento organico sem custo de midia.",
+    "Tornar o campo de telefone opcional e simplificar o formulario de endereco para capturar apenas cidade (via CEP, sem logradouro/numero) -- impacto estimado na taxa de conclusao do quiz: +15-25%.",
+    "Adicionar estimativa de tempo restante na barra de progresso do quiz: '~2 min restantes' baseado no numero de etapas ja concluidas -- reduz abandono no meio do formulario.",
+    "Expandir a pagina de agradecimento: mostrar numero atual de participantes, mensagem mais pessoal e emocional, e CTA de compartilhamento social destacado.",
+    "Realizar teste A/B entre headline atual e 'Sua Opiniao Define o Futuro da Bahia' para medir impacto real no inicio do quiz."
+  ],
+  "strategic": [
+    "Implementar contador de participantes em tempo real com webhook do Google Sheets exibindo o total dinamicamente na hero page -- cria urgencia social continua e aumenta credibilidade com cada novo participante.",
+    "Criar pagina de resultados parciais publicos: 'Veja como a Bahia esta votando ate agora' como isca para compartilhamento e retorno -- visitantes compartilham e trazem novos participantes.",
+    "Otimizar imagens dos candidatos para WebP e implementar loading='lazy' nos cards que nao aparecem no primeiro viewport -- reduz tempo de carregamento em dispositivos moveis e melhora Core Web Vitals.",
+    "Implementar segmentacao por municipio nos resultados pos-participacao -- mostrar resultados locais cria valor tangivel pela participacao e incentiva compartilhamento hiperlocal.",
+    "Desenvolver estrategia de SEO para captar trafego organico: schema SurveyAction, paginas de resultado por candidato, e conteudo editorial sobre eleicoes 2026 Bahia."
+  ],
+  "competitors": [
+    {
+      "name": "Pesquisas Tradicionais",
+      "positioning": "Pesquisas de institutos formais com amostras representativas",
+      "pricing": "Gratuito para o publico, pago para contratantes",
+      "social_proof": "Credibilidade de marca (Datafolha, IBGE etc)",
+      "content": "Resultados publicados em veiculo de midia"
+    },
+    {
+      "name": "Google Forms Politicos",
+      "positioning": "Formularios simples criados por candidatos ou partidos",
+      "pricing": "Gratuito",
+      "social_proof": "Nenhuma prova social formal",
+      "content": "Design generico, sem identidade visual"
+    },
+    {
+      "name": "WhatsApp Polls",
+      "positioning": "Enquetes informais em grupos de WhatsApp",
+      "pricing": "Gratuito",
+      "social_proof": "Confianca social do grupo",
+      "content": "Sem dados estruturados, nao rastreavel"
+    }
+  ]
+}
